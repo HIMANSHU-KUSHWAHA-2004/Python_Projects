@@ -1,5 +1,5 @@
 import random 
-from PRACTICE.art import logo
+from PRACTICE.Rock_paper_scissor_logo import logo
 def working(user,computer):
     if user == "r" and computer == "p":
         print(f"Computer choice : {computer}")
