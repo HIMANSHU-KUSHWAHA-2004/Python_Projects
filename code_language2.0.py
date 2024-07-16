@@ -1,12 +1,12 @@
 alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
-            'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' , ' ']
+            'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' , ' ', ",","."]
 def encryption(plain_text,shift_key):
     encrypt_text = ""
     for char in plain_text:
         position = alphabet.index(char)
         new_position = position + shift_key
-        if new_position > 26:
-            new_position = new_position - 27
+        if new_position > 28:
+            new_position = new_position - 29
             encrypt_text += alphabet[new_position]
         else :
             encrypt_text += alphabet[new_position]
@@ -18,8 +18,8 @@ def decryption(plain_text,shift_key):
     for char in plain_text:
         position = alphabet.index(char)
         new_position = position - shift_key
-        if new_position > 26:
-            new_position = new_position - 26
+        if new_position > 28:
+            new_position = new_position - 29
             decrypt_text += alphabet[new_position]
         else :
             decrypt_text += alphabet[new_position]  
