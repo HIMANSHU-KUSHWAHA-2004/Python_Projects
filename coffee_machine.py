@@ -1,4 +1,4 @@
-from PRACTICE.coffee_machine_logo import logo
+from coffee_machine_logo import logo
 
 ressources = {
     "milk" : 1500,
