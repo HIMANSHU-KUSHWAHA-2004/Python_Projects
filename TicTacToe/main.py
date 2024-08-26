@@ -1,4 +1,4 @@
-import PRACTICE.TicTacToe.tictactoe_logo as tictactoe_logo
+import tictactoe_logo 
 
 def sum(a,b,c):
     return a+b+c
