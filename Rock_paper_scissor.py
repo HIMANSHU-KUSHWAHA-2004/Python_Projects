@@ -1,5 +1,5 @@
 import random 
-from PRACTICE.Rock_paper_scissor_logo import logo
+from Rock_paper_scissor_logo import logo
 def working(user,computer):
     if user == "r" and computer == "p":
         print(f"Computer choice : {computer}")
@@ -19,6 +19,7 @@ def working(user,computer):
     elif  user == "s" and computer == "r":
         print(f"Computer choice : {computer}")
         return False
+    
 def main():
     print(logo())
     print("___________________________________Welcome to the Rock, Paper, Scissors game!____________________________\n")
